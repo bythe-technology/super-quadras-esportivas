@@ -231,9 +231,21 @@ export default function HomePage() {
               Consultar área de atendimento <Icon name="arrow" size={18} />
             </Link>
           </div>
-          <span className={styles.regionMark} aria-hidden="true">
-            BR
-          </span>
+          <div className={styles.regionMark} aria-hidden="true">
+            <svg viewBox="0 0 160 160" focusable="false">
+              <circle className={styles.regionOrbit} cx="80" cy="80" r="62" />
+              <circle className={styles.regionOrbitInner} cx="80" cy="80" r="48" />
+              <path
+                className={styles.regionRoute}
+                d="M35 94c19-32 45-45 78-43M48 116c22-17 43-21 71-12"
+              />
+              <circle className={styles.regionNode} cx="35" cy="94" r="3.5" />
+              <circle className={styles.regionNode} cx="113" cy="51" r="3.5" />
+              <circle className={styles.regionNode} cx="119" cy="104" r="3.5" />
+            </svg>
+            <strong>BR</strong>
+            <span>BRASIL</span>
+          </div>
         </div>
       </section>
       <section className="section surface">
