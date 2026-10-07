@@ -24,10 +24,14 @@ for (const [id, filename] of Object.entries(filenames)) {
   const metadata = await sharp(source).metadata();
   await sharp(source)
     .rotate()
+    .normalise({ lower: 1, upper: 99 })
+    .modulate({ brightness: 1.015, saturation: 0.97 })
     .webp({ quality: 85 })
     .toFile(path.join(publicRoot, 'media', `${id}.webp`));
   await sharp(source)
     .rotate()
+    .normalise({ lower: 1, upper: 99 })
+    .modulate({ brightness: 1.015, saturation: 0.97 })
     .avif({ quality: 55 })
     .toFile(path.join(publicRoot, 'media', `${id}.avif`));
   report.push({
@@ -36,7 +40,42 @@ for (const [id, filename] of Object.entries(filenames)) {
     width: metadata.width,
     height: metadata.height,
     rights: 'approved-owner',
-    treatment: 'format-only',
+    treatment: 'light-tonal-correction',
+  });
+}
+for (const photo of [
+  {
+    id: 'beach-tennis-photo',
+    source: 'assets/media-originals/beach-tennis-original.png',
+    rights: 'approved-owner',
+    treatment:
+      'Owner photograph, lightly normalized without generative edits, then converted to WebP/AVIF.',
+  },
+  {
+    id: 'grama-sintetica-referencia',
+    source: 'assets/media-originals/grama-sintetica-referencia-pexels.jpg',
+    rights: 'licensed-stock',
+    treatment:
+      'Licensed Pexels reference photograph, converted to WebP/AVIF without content edits.',
+  },
+]) {
+  const source = path.resolve(root, photo.source);
+  const metadata = await sharp(source).metadata();
+  for (const format of ['webp', 'avif']) {
+    const pipeline = sharp(source).rotate();
+    if (photo.id === 'beach-tennis-photo')
+      pipeline.normalise({ lower: 1, upper: 99 }).modulate({ brightness: 1.025, saturation: 0.98 });
+    await pipeline[format](format === 'webp' ? { quality: 86 } : { quality: 55 }).toFile(
+      path.join(publicRoot, 'media', `${photo.id}.${format}`),
+    );
+  }
+  report.push({
+    id: photo.id,
+    filename: photo.source,
+    width: metadata.width,
+    height: metadata.height,
+    rights: photo.rights,
+    treatment: photo.treatment,
   });
 }
 
@@ -147,5 +186,5 @@ await fs.copyFile(
 );
 await fs.writeFile(path.join(publicRoot, 'media/manifest.json'), JSON.stringify(report, null, 2));
 console.log(
-  `Prepared ${report.length} archive photos, faithful logo traces, favicons and local fonts.`,
+  `Prepared ${Object.keys(filenames).length} archive photos, supplemental photos, faithful logo traces, favicons and local fonts.`,
 );

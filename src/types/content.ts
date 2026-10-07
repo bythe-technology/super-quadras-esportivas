@@ -15,10 +15,11 @@ export interface MediaAsset {
   alt: string;
   width: number;
   height: number;
-  kind: 'archive-photo' | 'conceptual-illustration';
+  kind: 'archive-photo' | 'reference-photo' | 'conceptual-illustration';
   source: string;
-  rights: 'pending-owner' | 'approved-owner' | 'original-illustration';
+  rights: 'pending-owner' | 'approved-owner' | 'licensed-stock' | 'original-illustration';
   treatment: string;
+  caption?: string;
 }
 export interface Service {
   slug: string;

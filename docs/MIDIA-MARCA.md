@@ -2,7 +2,7 @@
 
 ## Acervo
 
-17 fotografias únicas e a logo original permanecem no acervo externo ao projeto. O site seleciona oito fotos para biblioteca de trabalho, com conversões WebP/AVIF. Nenhuma obra foi modificada, criada por IA ou apresentada como entrega confirmada. Instagram não foi acessível; nenhum conteúdo foi copiado contornando restrições.
+17 fotografias únicas e a logo original permanecem no acervo externo ao projeto. O site seleciona oito fotos antigas para biblioteca de trabalho, com conversões WebP/AVIF e ajuste tonal leve não generativo (contraste/exposição discretos, sem mudar conteúdo ou geometria). Instagram não foi acessível; nenhum conteúdo foi copiado contornando restrições.
 
 Registro completo das mídias usadas: `src/modules/content/media.ts`. Conversões e dimensões reais: `public/media/manifest.json`. Fotos recuperadas autorizadas pelo responsável nesta conversa em 2026-10-07: `approved-owner`. A autorização de uso não confirma cliente, cidade, data ou escopo de execução. Os registros isolados continuam fora dos estudos de caso publicados.
 
@@ -10,7 +10,15 @@ Registro completo das mídias usadas: `src/modules/content/media.ts`. Conversõe
 
 ## Tratamento
 
-Fotos receberam somente conversão e remoção de metadados. Recorte é feito na apresentação, sem deformação. Não remover problemas construtivos nem simular reforma. Correções fotográficas futuras devem manter fidelidade. Anonimizar rostos e placas identificáveis quando necessário.
+Fotos antigas recebem conversão e ajuste tonal leve não generativo. Recorte é feito na apresentação, sem deformação. Não remover problemas construtivos nem simular reforma. Anonimizar rostos e placas identificáveis quando necessário.
+
+## Grama sintética e beach tennis
+
+A imagem de beach tennis enviada pelo proprietário foi preservada em `assets/media-originals/beach-tennis-original.png`; a versão do site usa apenas normalização tonal leve não generativa. As tentativas de edição generativa de fotografias de obras foram descartadas porque alteraram detalhes físicos, como linhas e equipamentos. Nenhuma saída generativa de obra está publicada. A imagem é usada somente como foto de serviço e capa editorial, nunca como caso com cliente, cidade, data ou resultado confirmado.
+
+Grama sintética usa fotografia real licenciada no Pexels, de Zoryana Rusin: [imagem original e licença](https://www.pexels.com/photo/close-up-of-green-soccer-field-turf-with-white-lines-33267122/). É um detalhe de superfície e está rotulada “Foto de referência · não é obra da empresa”. Arquivo original preservado em `assets/media-originals/grama-sintetica-referencia-pexels.jpg`. Pedir foto própria ao proprietário quando disponível e substituir a referência antes de apresentar a imagem como portfólio.
+
+As tentativas de ImageGen para fotos reais seguiram o pedido de preservar composição e elementos físicos, mas foram revisadas visualmente e não utilizadas por introduzirem mudanças na cena. Para preservar o valor documental das fotos, a melhoria publicada é feita com ajustes tonais não generativos; ImageGen permanece adequado para ilustrações explicitamente conceituais.
 
 SVGs conceituais: quadra, beach tennis, campo, tênis, atletismo, playground, paisagismo e camadas de base. Não têm cotas nem especificação executiva. Legendas sinalizam uso conceitual. Diagramas técnicos precisam de revisão profissional.
 

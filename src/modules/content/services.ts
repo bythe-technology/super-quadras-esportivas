@@ -125,7 +125,7 @@ export const services: Service[] = [
     shortTitle: 'Grama sintética',
     description:
       'Uma superfície sintética precisa ser especificada em conjunto com a base, o escoamento e a finalidade do espaço.',
-    imageId: 'campo',
+    imageId: 'grama-sintetica-referencia',
     applications: ['Campos esportivos', 'Áreas de treino', 'Espaços de lazer'],
     scope: [
       'Entendimento da modalidade e do uso',
@@ -221,7 +221,7 @@ export const services: Service[] = [
     shortTitle: 'Quadras de beach tennis',
     description:
       'Um espaço de areia bem planejado começa pela avaliação da área, do escoamento e da operação.',
-    imageId: 'beach-tennis',
+    imageId: 'beach-tennis-photo',
     applications: ['Arenas esportivas', 'Clubes e condomínios', 'Áreas particulares'],
     scope: [
       'Estudo da área e da circulação',

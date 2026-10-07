@@ -8,7 +8,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/construcao-de-quadra-poliesportiva-4.jpeg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "quadra-azul-coberta",
@@ -19,7 +19,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/Quadra-Esportiva-1.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "quadra-ginasio",
@@ -30,7 +30,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/Quadra-Esportiva-12.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "quadra-ginasio-detalhe",
@@ -41,7 +41,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/Quadra-Esportiva-10.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "construcao-quadra",
@@ -52,7 +52,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/construcao-de-quadras-1.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "piso-asfaltico",
@@ -63,7 +63,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/piso-asfaltico-para-quadras-poliesportivas.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "piso-concreto",
@@ -74,7 +74,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/piso-de-concreto-para-quadras-poliesportivas.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "saibro",
@@ -85,7 +85,7 @@
     "kind": "archive-photo",
     "source": "../assets/biblioteca/imagens/saibro-sintetico-para-quadras-poliesportivas.jpg",
     "rights": "approved-owner",
-    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+    "treatment": "Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra."
   },
   {
     "id": "quadra-tecnica",
@@ -108,6 +108,29 @@
     "source": "Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md",
     "rights": "original-illustration",
     "treatment": "Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo."
+  },
+  {
+    "id": "beach-tennis-photo",
+    "src": "/media/beach-tennis-photo.webp",
+    "alt": "Quadra real de beach tennis com areia, rede, alambrado e vegetação ao redor.",
+    "width": 711,
+    "height": 516,
+    "kind": "archive-photo",
+    "source": "Fotografia enviada pelo proprietário · assets/media-originals/beach-tennis-original.png",
+    "rights": "approved-owner",
+    "treatment": "Correção tonal leve não generativa e conversão WebP/AVIF; não usada como estudo de caso identificado."
+  },
+  {
+    "id": "grama-sintetica-referencia",
+    "src": "/media/grama-sintetica-referencia.webp",
+    "alt": "Detalhe real de grama sintética esportiva verde com linhas brancas de marcação.",
+    "width": 2848,
+    "height": 4272,
+    "kind": "reference-photo",
+    "source": "Zoryana Rusin / Pexels · https://www.pexels.com/photo/close-up-of-green-soccer-field-turf-with-white-lines-33267122/",
+    "rights": "licensed-stock",
+    "treatment": "Fotografia de referência licenciada no Pexels; conversão WebP/AVIF, sem alteração de conteúdo.",
+    "caption": "Foto de referência · não é obra da empresa"
   },
   {
     "id": "campo",

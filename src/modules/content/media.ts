@@ -15,7 +15,8 @@ const archive = (
   kind: 'archive-photo',
   source: `../assets/biblioteca/imagens/${filename}`,
   rights: 'approved-owner',
-  treatment: 'Conversão de formato e remoção de metadados; sem alteração da obra.',
+  treatment:
+    'Conversão WebP/AVIF e correção tonal leve não generativa; sem mudança de geometria ou conteúdo da obra.',
 });
 const illustration = (id: string, alt: string): MediaAsset => ({
   id,
@@ -36,6 +37,32 @@ const generated = (id: string, alt: string): MediaAsset => ({
   source: 'Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md',
   treatment:
     'Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo.',
+});
+const ownerPhoto = (id: string, alt: string, width: number, height: number): MediaAsset => ({
+  id,
+  src: `/media/${id}.webp`,
+  alt,
+  width,
+  height,
+  kind: 'archive-photo',
+  source: 'Fotografia enviada pelo proprietário · assets/media-originals/beach-tennis-original.png',
+  rights: 'approved-owner',
+  treatment:
+    'Correção tonal leve não generativa e conversão WebP/AVIF; não usada como estudo de caso identificado.',
+});
+const referencePhoto = (id: string, alt: string, width: number, height: number): MediaAsset => ({
+  id,
+  src: `/media/${id}.webp`,
+  alt,
+  width,
+  height,
+  kind: 'reference-photo',
+  source:
+    'Zoryana Rusin / Pexels · https://www.pexels.com/photo/close-up-of-green-soccer-field-turf-with-white-lines-33267122/',
+  rights: 'licensed-stock',
+  treatment:
+    'Fotografia de referência licenciada no Pexels; conversão WebP/AVIF, sem alteração de conteúdo.',
+  caption: 'Foto de referência · não é obra da empresa',
 });
 
 export const media: MediaAsset[] = [
@@ -99,6 +126,18 @@ export const media: MediaAsset[] = [
   generated(
     'beach-tennis',
     'Ilustração conceitual em 3D de quadra de beach tennis com areia e rede.',
+  ),
+  ownerPhoto(
+    'beach-tennis-photo',
+    'Quadra real de beach tennis com areia, rede, alambrado e vegetação ao redor.',
+    711,
+    516,
+  ),
+  referencePhoto(
+    'grama-sintetica-referencia',
+    'Detalhe real de grama sintética esportiva verde com linhas brancas de marcação.',
+    2848,
+    4272,
   ),
   illustration('campo', 'Ilustração conceitual de campo com superfície verde.'),
   illustration('tenis', 'Ilustração conceitual de quadra de tênis com rede.'),

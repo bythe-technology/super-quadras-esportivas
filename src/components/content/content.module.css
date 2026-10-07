@@ -51,6 +51,7 @@
   position: absolute;
   bottom: 12px;
   left: 12px;
+  max-width: calc(100% - 24px);
   font-size: 10px;
   font-weight: 600;
   color: #294335;
@@ -98,6 +99,7 @@
 .serviceCard .caption,
 .guideCard .caption {
   padding: 6px 10px;
+  border-radius: 10px;
 }
 .cardBody {
   padding: 28px;

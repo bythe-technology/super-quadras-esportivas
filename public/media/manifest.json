@@ -5,7 +5,7 @@
     "width": 1040,
     "height": 780,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "quadra-azul-coberta",
@@ -13,7 +13,7 @@
     "width": 1080,
     "height": 607,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "quadra-ginasio",
@@ -21,7 +21,7 @@
     "width": 1080,
     "height": 1080,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "quadra-ginasio-detalhe",
@@ -29,7 +29,7 @@
     "width": 1080,
     "height": 1080,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "construcao-quadra",
@@ -37,7 +37,7 @@
     "width": 1080,
     "height": 607,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "piso-asfaltico",
@@ -45,7 +45,7 @@
     "width": 350,
     "height": 263,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "piso-concreto",
@@ -53,7 +53,7 @@
     "width": 350,
     "height": 263,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
   },
   {
     "id": "saibro",
@@ -61,6 +61,22 @@
     "width": 350,
     "height": 263,
     "rights": "approved-owner",
-    "treatment": "format-only"
+    "treatment": "light-tonal-correction"
+  },
+  {
+    "id": "beach-tennis-photo",
+    "filename": "assets/media-originals/beach-tennis-original.png",
+    "width": 711,
+    "height": 516,
+    "rights": "approved-owner",
+    "treatment": "Owner photograph, lightly normalized without generative edits, then converted to WebP/AVIF."
+  },
+  {
+    "id": "grama-sintetica-referencia",
+    "filename": "assets/media-originals/grama-sintetica-referencia-pexels.jpg",
+    "width": 2848,
+    "height": 4272,
+    "rights": "licensed-stock",
+    "treatment": "Licensed Pexels reference photograph, converted to WebP/AVIF without content edits."
   }
 ]

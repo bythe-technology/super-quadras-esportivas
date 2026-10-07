@@ -20,8 +20,10 @@ export function Media({
       <div className={styles.imageFrame}>
         <Image src={asset.src} alt={asset.alt} fill sizes={sizes} preload={priority} quality={85} />
       </div>
-      {caption && asset.kind === 'conceptual-illustration' ? (
-        <figcaption className={styles.caption}>Ilustração conceitual</figcaption>
+      {caption && (asset.caption || asset.kind === 'conceptual-illustration') ? (
+        <figcaption className={styles.caption}>
+          {asset.caption ?? 'Ilustração conceitual'}
+        </figcaption>
       ) : null}
     </figure>
   );
