@@ -218,10 +218,9 @@
 }
 .regionInner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr) 150px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
   gap: 40px;
   align-items: center;
-  position: relative;
 }
 .region .eyebrow {
   color: #a3d5b4;
@@ -249,62 +248,6 @@
 .region a:hover {
   text-decoration: underline;
 }
-.regionMark {
-  width: 138px;
-  aspect-ratio: 1;
-  position: relative;
-  display: grid;
-  place-items: center;
-  justify-self: end;
-  border: 1px solid #a3d5b43d;
-  border-radius: 50%;
-  background: radial-gradient(circle at 45% 38%, #ffffff12, #ffffff03 68%);
-  isolation: isolate;
-}
-.regionMark svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  fill: none;
-  pointer-events: none;
-}
-.regionOrbit {
-  stroke: #a3d5b45c;
-  stroke-width: 1;
-}
-.regionOrbitInner {
-  stroke: #a3d5b426;
-  stroke-width: 1;
-  stroke-dasharray: 2 5;
-}
-.regionRoute {
-  stroke: #a3d5b48c;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-}
-.regionNode {
-  fill: #b7dfc4;
-  stroke: #102d25;
-  stroke-width: 2;
-}
-.regionMark strong {
-  z-index: 1;
-  margin-top: -7px;
-  color: #d7eadf;
-  font-size: 38px;
-  line-height: 1;
-  letter-spacing: -2px;
-}
-.regionMark span {
-  z-index: 1;
-  position: absolute;
-  bottom: 23px;
-  color: #a3d5b4;
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
 .faqGrid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -316,22 +259,10 @@
 .faqGrid .sectionHeading {
   align-self: start;
 }
-.regionMark {
-  color: #80a68f;
-}
 @media (max-width: 900px) {
   .regionInner {
-    grid-template-columns: minmax(0, 1fr) 124px;
-    gap: 28px 20px;
-  }
-  .regionInner > div:nth-child(2) {
-    grid-column: 1 / -1;
-  }
-  .regionMark {
-    width: 120px;
-  }
-  .regionMark strong {
-    font-size: 34px;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 @media (max-width: 1100px) {
@@ -459,24 +390,7 @@
     padding-right: 18px;
   }
   .regionInner {
-    grid-template-columns: minmax(0, 1fr) 82px;
-    gap: 18px 12px;
-  }
-  .regionMark {
-    width: 82px;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .regionMark strong {
-    font-size: 25px;
-  }
-  .regionMark span {
-    bottom: 13px;
-    font-size: 6px;
-    letter-spacing: 1.5px;
-  }
-  .regionInner > div:nth-child(2) {
-    grid-column: 1 / -1;
+    gap: 16px;
   }
   .region h2 {
     font-size: 28px;

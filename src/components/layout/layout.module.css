@@ -1,5 +1,5 @@
 .header {
-  background: #103c2ff5;
+  background: var(--green);
   color: #f6faf7;
   border: 1px solid #ffffff26;
   position: fixed;
