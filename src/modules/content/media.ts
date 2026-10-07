@@ -172,6 +172,30 @@ export const media: MediaAsset[] = [
     'DaFqwYah0VR',
     'Quadra externa de piso verde com rede central, linhas brancas e fechamento em tela.',
   ),
+  instagramPhoto(
+    'ig-quadra-verde-multiesportiva',
+    'quadra-verde-multiesportiva-instagram.jpg',
+    'DaDO-CUhF8I',
+    'Quadra verde ao ar livre com rede central, tabela de basquete e marcações esportivas.',
+  ),
+  instagramPhoto(
+    'ig-quadra-verde-vermelha',
+    'quadra-verde-vermelha-instagram.jpg',
+    'DZ-zeCjhi0L',
+    'Quadra externa verde com áreas vermelhas e linhas brancas de diferentes modalidades.',
+  ),
+  instagramPhoto(
+    'ig-quadra-em-preparacao',
+    'quadra-em-preparacao-instagram.jpg',
+    'DZr38X8hXVZ',
+    'Área esportiva elevada com fechamento em alambrado e terreno de terra ao redor.',
+  ),
+  instagramPhoto(
+    'ig-campo-gramado',
+    'campo-gramado-instagram.jpg',
+    'DZunugdla9L',
+    'Campo gramado visto através de alambrado, com traves e área esportiva ao ar livre.',
+  ),
   referencePhoto(
     'grama-sintetica-referencia',
     'Detalhe real de grama sintética esportiva verde com linhas brancas de marcação.',

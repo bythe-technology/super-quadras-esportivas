@@ -28,9 +28,16 @@ describe('publication environment gates', () => {
     expect(sitemap.some((item) => item.url.includes('/obras/'))).toBe(false);
     const { contentRepository } = await import('@/repositories/contentRepository');
     expect(contentRepository.projects().map((project) => project.slug)).toEqual([
+      'ginasio-multiesportivo',
+      'campo-gramado-com-gol',
       'quadra-azul-multiesportiva',
       'quadra-verde-terracota',
+      'quadra-verde-vermelha',
       'quadra-externa-verde-com-rede',
+      'quadra-verde-multiesportiva',
+      'quadra-em-preparacao',
+      'quadra-externa-azul',
+      'quadra-azul-coberta',
     ]);
     expect(contentRepository.project('quadra-azul-multiesportiva')).toBeUndefined();
   });

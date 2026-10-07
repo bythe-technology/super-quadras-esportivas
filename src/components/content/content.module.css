@@ -129,6 +129,27 @@
 .projectCard {
   display: block;
 }
+.projectGallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 34px 24px;
+}
+.projectGallery > * {
+  grid-column: span 4;
+}
+.projectGallery > :nth-child(-n + 2) {
+  grid-column: span 6;
+}
+.projectMedia .imageFrame {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+}
+.projectCardFeature .projectMedia .imageFrame {
+  aspect-ratio: 16 / 10;
+}
+.projectCardFeature .projectCaption h3 {
+  font-size: 18px;
+}
 .projectCaption {
   display: flex;
   align-items: center;
@@ -433,6 +454,9 @@
     gap: 32px;
     grid-template-columns: 1fr 1fr;
   }
+  .projectGallery > * {
+    grid-column: span 6;
+  }
 }
 @media (max-width: 720px) {
   .sectionHeading {
@@ -498,6 +522,17 @@
   }
   .gallery {
     grid-template-columns: 1fr;
+  }
+  .projectGallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .projectGallery > *,
+  .projectGallery > :nth-child(-n + 2) {
+    grid-column: 1;
+  }
+  .projectCardFeature .projectMedia .imageFrame {
+    aspect-ratio: 4 / 3;
   }
   .largeMedia .imageFrame {
     aspect-ratio: 4/3;

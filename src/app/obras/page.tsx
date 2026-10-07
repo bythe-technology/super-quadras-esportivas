@@ -6,7 +6,7 @@ import { pageMetadata } from '@/utils/seo';
 import styles from '@/components/content/content.module.css';
 export const metadata = pageMetadata(
   'Obras e registros',
-  'Veja registros fotográficos de quadras esportivas, com legendas baseadas no que aparece em cada imagem, sem presumir cliente ou local.',
+  'Explore registros fotográficos de quadras, ginásios, campos gramados e etapas de construção, com legendas descritivas e sem presumir cliente ou local.',
   '/obras',
 );
 export default function ProjectsPage() {
@@ -15,22 +15,26 @@ export default function ProjectsPage() {
     <>
       <PageIntro
         eyebrow="ESPAÇOS EM FOCO"
-        title="O esporte ganha forma."
-        description="Uma seleção de registros visuais, descritos pelo que aparece em cada imagem. Cliente, local e escopo não são presumidos."
+        title="Quadras, campos e pisos em foco."
+        description={`${projects.length} registros visuais de espaços esportivos, com diferentes superfícies, cores e configurações.`}
         breadcrumbs={[{ label: 'Obras', href: '/obras' }]}
       />
       <section className="section">
         <div className="container">
           {projects.some((p) => p.recordType === 'photo-record') ? (
             <p className={styles.reviewBox}>
-              Fotos autorizadas do perfil da empresa. As legendas descrevem apenas elementos
-              visíveis; não identificam clientes, locais ou escopos de execução.
+              Fotos autorizadas do acervo e do Instagram da empresa. As legendas descrevem apenas
+              elementos visíveis; não identificam clientes, locais ou escopos de execução.
             </p>
           ) : null}
           {projects.length ? (
-            <div className="grid-3" style={{ marginTop: 32 }}>
-              {projects.map((p) => (
-                <ProjectCard key={p.slug} project={p} />
+            <div className={styles.projectGallery} style={{ marginTop: 32 }}>
+              {projects.map((project, index) => (
+                <ProjectCard
+                  key={project.slug}
+                  project={project}
+                  featured={index < 2}
+                />
               ))}
             </div>
           ) : (

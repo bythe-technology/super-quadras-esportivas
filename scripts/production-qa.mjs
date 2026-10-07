@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-const base = process.env.PRODUCTION_QA_URL ?? 'http://localhost:3101';
+const base = process.env.PRODUCTION_QA_URL ?? 'http://localhost:3100';
 const home = await fetch(base);
 assert.equal(home.status, 200);
 assert.equal(home.headers.get('x-robots-tag'), null);
@@ -12,6 +12,29 @@ const works = await (await fetch(`${base}/obras`)).text();
 assert.ok(works.includes('Quadra externa · piso azul'));
 assert.ok(works.includes('Quadra externa · verde e terracota'));
 assert.ok(works.includes('Quadra verde · rede e linhas brancas'));
+assert.ok(works.includes('Ginásio · piso laranja e marcações esportivas'));
+assert.ok(works.includes('Campo gramado · fechamento e gol'));
+assert.ok(works.includes('Quadra verde · rede, tabela e linhas'));
+assert.ok(works.includes('Quadra verde · áreas vermelhas e linhas brancas'));
+assert.ok(works.includes('Espaço esportivo · alambrado e área de terra'));
+assert.ok(works.includes('Registro visual · Pisos esportivos'));
+assert.ok(works.includes('Registro visual · Campos de futebol'));
+assert.ok(works.includes('Registro visual · Quadras poliesportivas'));
+for (const id of [
+  'quadra-ginasio',
+  'ig-campo-gramado',
+  'ig-quadra-azul-multiesportiva',
+  'ig-quadra-verde-terracota',
+  'ig-quadra-verde-vermelha',
+  'ig-quadra-verde-tenis',
+  'ig-quadra-verde-multiesportiva',
+  'ig-quadra-em-preparacao',
+  'quadra-azul-exterior',
+  'quadra-azul-coberta',
+]) {
+  const image = await fetch(`${base}/media/${id}.webp`);
+  assert.equal(image.status, 200, `missing project image: ${id}`);
+}
 const robots = await (await fetch(`${base}/robots.txt`)).text();
 assert.ok(robots.includes('Allow: /'));
 assert.ok(!robots.includes('Disallow: /'));
@@ -43,5 +66,5 @@ await fs.writeFile(
   ),
 );
 console.log(
-  'Production verified: 24 indexable URLs; archive photo records visible, individual records excluded.',
+  'Production verified: 24 indexable URLs; 10 varied photo records visible, individual records excluded.',
 );

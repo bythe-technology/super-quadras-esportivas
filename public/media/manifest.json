@@ -102,5 +102,37 @@
     "height": 1440,
     "rights": "approved-owner",
     "treatment": "Owner-authorized public Instagram photo; light tonal correction only, no generative edits."
+  },
+  {
+    "id": "ig-quadra-verde-multiesportiva",
+    "filename": "assets/media-originals/instagram/quadra-verde-multiesportiva-instagram.jpg",
+    "width": 1440,
+    "height": 1440,
+    "rights": "approved-owner",
+    "treatment": "Owner-authorized public Instagram photo; light tonal correction only, no generative edits."
+  },
+  {
+    "id": "ig-quadra-verde-vermelha",
+    "filename": "assets/media-originals/instagram/quadra-verde-vermelha-instagram.jpg",
+    "width": 1440,
+    "height": 1440,
+    "rights": "approved-owner",
+    "treatment": "Owner-authorized public Instagram photo; light tonal correction only, no generative edits."
+  },
+  {
+    "id": "ig-quadra-em-preparacao",
+    "filename": "assets/media-originals/instagram/quadra-em-preparacao-instagram.jpg",
+    "width": 1440,
+    "height": 1440,
+    "rights": "approved-owner",
+    "treatment": "Owner-authorized public Instagram photo; light tonal correction only, no generative edits."
+  },
+  {
+    "id": "ig-campo-gramado",
+    "filename": "assets/media-originals/instagram/campo-gramado-instagram.jpg",
+    "width": 1440,
+    "height": 1440,
+    "rights": "approved-owner",
+    "treatment": "Owner-authorized public Instagram photo; light tonal correction only, no generative edits."
   }
 ]

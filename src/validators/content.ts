@@ -67,13 +67,18 @@ export function validateContent({
       if (project.recordType === 'photo-record') {
         if (project.imageIds.length !== 1)
           errors.push(`Published photo record must have exactly one photo: ${project.slug}`);
-        try {
-          if (new URL(project.sourceUrl ?? '').origin !== 'https://www.instagram.com')
-            errors.push(
-              `Published photo record must link to its Instagram source: ${project.slug}`,
-            );
-        } catch {
-          errors.push(`Published photo record must link to its Instagram source: ${project.slug}`);
+        const sourceIsInstagram = project.imageIds.some((id) =>
+          mediaById.get(id)?.source.startsWith('Instagram público da empresa'),
+        );
+        if (project.sourceUrl || sourceIsInstagram) {
+          try {
+            if (new URL(project.sourceUrl ?? '').origin !== 'https://www.instagram.com')
+              errors.push(
+                `Published photo record must link to its Instagram source: ${project.slug}`,
+              );
+          } catch {
+            errors.push(`Published photo record must link to its Instagram source: ${project.slug}`);
+          }
         }
       }
     }

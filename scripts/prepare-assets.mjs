@@ -79,6 +79,34 @@ for (const photo of [
     treatment:
       'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
   },
+  {
+    id: 'ig-quadra-verde-multiesportiva',
+    source: 'assets/media-originals/instagram/quadra-verde-multiesportiva-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
+  {
+    id: 'ig-quadra-verde-vermelha',
+    source: 'assets/media-originals/instagram/quadra-verde-vermelha-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
+  {
+    id: 'ig-quadra-em-preparacao',
+    source: 'assets/media-originals/instagram/quadra-em-preparacao-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
+  {
+    id: 'ig-campo-gramado',
+    source: 'assets/media-originals/instagram/campo-gramado-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
 ]) {
   const source = path.resolve(root, photo.source);
   const metadata = await sharp(source).metadata();

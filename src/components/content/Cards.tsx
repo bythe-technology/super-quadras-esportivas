@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Media } from './Media';
 import { Icon } from '@/components/ui/Icon';
+import { contentRepository } from '@/repositories/contentRepository';
 import type { Guide, Project, Service } from '@/types/content';
 import styles from './content.module.css';
 export function ServiceCard({
@@ -26,15 +27,31 @@ export function ServiceCard({
     </Link>
   );
 }
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({
+  project,
+  featured = false,
+}: {
+  project: Project;
+  featured?: boolean;
+}) {
+  const cardClassName = featured
+    ? `${styles.projectCard} ${styles.projectCardFeature}`
+    : styles.projectCard;
+  const projectLabel =
+    project.recordType === 'photo-record'
+      ? `Registro visual · ${contentRepository.service(project.serviceSlug)?.shortTitle ?? 'espaço esportivo'}`
+      : 'Obra documentada';
   const content = (
     <>
-      <Media id={project.imageIds[0]} caption={false} sizes="(max-width:720px) 100vw, 33vw" />
+      <Media
+        id={project.imageIds[0]}
+        caption={false}
+        className={styles.projectMedia}
+        sizes={featured ? '(max-width:720px) 100vw, 50vw' : '(max-width:720px) 100vw, 33vw'}
+      />
       <div className={styles.projectCaption}>
         <div>
-          <span>
-            {project.recordType === 'photo-record' ? 'Registro fotográfico' : 'Obra documentada'}
-          </span>
+          <span>{projectLabel}</span>
           <h3>{project.title}</h3>
         </div>
         {project.sourceUrl || project.recordType === 'case-study' ? (
@@ -45,7 +62,7 @@ export function ProjectCard({ project }: { project: Project }) {
   );
   if (project.recordType === 'case-study')
     return (
-      <Link href={`/obras/${project.slug}`} className={styles.projectCard}>
+      <Link href={`/obras/${project.slug}`} className={cardClassName}>
         {content}
       </Link>
     );
@@ -53,7 +70,7 @@ export function ProjectCard({ project }: { project: Project }) {
     return (
       <a
         href={project.sourceUrl}
-        className={styles.projectCard}
+        className={cardClassName}
         target="_blank"
         rel="noreferrer"
         aria-label={`Ver publicação original no Instagram: ${project.title}`}
@@ -61,7 +78,7 @@ export function ProjectCard({ project }: { project: Project }) {
         {content}
       </a>
     );
-  return <article className={styles.projectCard}>{content}</article>;
+  return <article className={cardClassName}>{content}</article>;
 }
 export function GuideCard({ guide }: { guide: Guide }) {
   return (
