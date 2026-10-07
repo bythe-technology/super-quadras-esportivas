@@ -48,12 +48,22 @@ export function Footer() {
             </Link>
           </div>
         </div>
+        <div className={styles.bytheCredit}>
+          <a
+            href="https://bythe.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Desenvolvido por Bythe Technology — visitar bythe.tech"
+          >
+            <span>DESENVOLVIDO POR</span>
+            <Image src="/brand/bythe.svg" alt="Bythe Technology" width={38} height={30} />
+          </a>
+        </div>
         <div className={styles.footerBottom}>
           <span>© {new Date().getFullYear()} Super Quadras Esportivas</span>
           <div>
             <Link href="/politica-de-privacidade">Privacidade</Link>
             <PrivacyPreferences />
-            <span>Desenvolvido pela Bythe</span>
           </div>
         </div>
       </div>
