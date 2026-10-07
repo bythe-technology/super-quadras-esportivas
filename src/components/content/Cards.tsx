@@ -3,10 +3,18 @@ import { Media } from './Media';
 import { Icon } from '@/components/ui/Icon';
 import type { Guide, Project, Service } from '@/types/content';
 import styles from './content.module.css';
-export function ServiceCard({ service, index }: { service: Service; index: number }) {
+export function ServiceCard({
+  service,
+  index,
+  imageId = service.imageId,
+}: {
+  service: Service;
+  index: number;
+  imageId?: string;
+}) {
   return (
     <Link href={`/solucoes/${service.slug}`} className={styles.serviceCard}>
-      <Media id={service.imageId} sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 33vw" />
+      <Media id={imageId} sizes="(max-width:720px) 100vw, (max-width:1000px) 50vw, 33vw" />
       <div className={styles.cardBody}>
         <div className={styles.cardNumber}>
           /{String(index + 1).padStart(2, '0')}

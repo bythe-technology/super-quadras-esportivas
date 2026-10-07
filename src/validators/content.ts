@@ -15,9 +15,17 @@ export function validateContent({
 }) {
   const errors: string[] = [];
   const mediaById = new Map(media.map((m) => [m.id, m]));
-  for (const service of services)
+  for (const service of services) {
     if (!serviceCatalog.some((item) => item.slug === service.slug && item.title === service.title))
       errors.push(`Service catalog mismatch: ${service.slug}`);
+    const illustration = mediaById.get(service.illustrationId);
+    if (!illustration)
+      errors.push(`Missing service illustration: ${service.slug}/${service.illustrationId}`);
+    else if (illustration.kind !== 'conceptual-illustration')
+      errors.push(
+        `Service illustration must be conceptual: ${service.slug}/${service.illustrationId}`,
+      );
+  }
   for (const [name, items] of Object.entries({ services, projects, guides })) {
     const seen = new Set<string>();
     for (const item of items) {

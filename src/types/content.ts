@@ -29,6 +29,7 @@ export interface Service {
   category: 'principal' | 'complementar';
   status: PublicationStatus;
   imageId: string;
+  illustrationId: string;
   applications: string[];
   scope: string[];
   materials: string;

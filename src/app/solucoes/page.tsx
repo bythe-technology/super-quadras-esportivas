@@ -25,7 +25,7 @@ export default function SolutionsPage() {
             {services
               .filter((s) => s.category === 'principal')
               .map((s, i) => (
-                <ServiceCard key={s.slug} service={s} index={i} />
+                <ServiceCard key={s.slug} service={s} index={i} imageId={s.illustrationId} />
               ))}
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function SolutionsPage() {
               {services
                 .filter((s) => s.category === 'complementar')
                 .map((s, i) => (
-                  <ServiceCard key={s.slug} service={s} index={i} />
+                  <ServiceCard key={s.slug} service={s} index={i} imageId={s.illustrationId} />
                 ))}
             </div>
           </div>

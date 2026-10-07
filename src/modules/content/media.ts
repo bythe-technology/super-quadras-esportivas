@@ -29,12 +29,16 @@ const illustration = (id: string, alt: string): MediaAsset => ({
   rights: 'original-illustration',
   treatment: 'Composição conceitual, sem medidas ou especificação executiva.',
 });
-const generated = (id: string, alt: string): MediaAsset => ({
+const generated = (
+  id: string,
+  alt: string,
+  promptDocument = 'docs/ILUSTRACOES.md',
+): MediaAsset => ({
   ...illustration(id, alt),
   src: `/illustrations/${id}-premium.webp`,
   width: 1448,
   height: 1086,
-  source: 'Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md',
+  source: `Gerador integrado OpenAI · 2026-10-07 · prompts em ${promptDocument}`,
   treatment:
     'Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo.',
 });
@@ -147,5 +151,65 @@ export const media: MediaAsset[] = [
   generated(
     'base-drenagem',
     'Ilustração conceitual das camadas de uma superfície esportiva, sem especificação executiva.',
+  ),
+  generated(
+    'solucao-construcao-de-quadras',
+    'Maquete conceitual de uma nova quadra esportiva azul, com perímetro verde, marcações brancas e fechamento.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-reforma-de-quadras',
+    'Maquete conceitual de reforma de quadra com superfície renovada e uma seção mostrando camadas construtivas.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-pisos-esportivos',
+    'Composição conceitual de amostras de pisos esportivos azul, laranja e cinza.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-grama-sintetica',
+    'Maquete conceitual de campo de futebol society com grama sintética verde e marcações brancas.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-campos-de-futebol',
+    'Maquete conceitual de campo de futebol verde com linhas, gols e corte lateral da base.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-quadras-poliesportivas',
+    'Maquete conceitual de quadra poliesportiva azul e verde com marcações para diferentes modalidades.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-quadras-de-tenis',
+    'Maquete conceitual de quadra de tênis azul e verde com rede e marcações brancas.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-quadras-de-beach-tennis',
+    'Maquete conceitual de quadra de beach tennis com areia clara, linhas azuis e rede central.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-pistas-de-atletismo',
+    'Maquete conceitual de pista oval de atletismo terracota com quatro raias e campo central verde.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-estruturas-e-acessorios',
+    'Composição conceitual de alambrado com portão, tabela de basquete, gol e postes com rede.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-playgrounds',
+    'Maquete conceitual de playground compacto com estrutura de madeira, escorregador e balanços.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
+  ),
+  generated(
+    'solucao-paisagismo',
+    'Maquete conceitual de paisagismo com caminho de pedra, vegetação, árvores e banco junto a uma quadra.',
+    'docs/ILUSTRACOES-SOLUCOES.md',
   ),
 ];

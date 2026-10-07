@@ -6,6 +6,7 @@ interface ServiceInput {
   shortTitle: string;
   description: string;
   imageId: string;
+  illustrationId: string;
   applications: string[];
   scope: string[];
   materials: string;
@@ -46,6 +47,7 @@ export const services: Service[] = [
     description:
       'Do espaço disponível à definição de uma quadra adequada ao uso: planejamento, base, superfície e estrutura precisam trabalhar juntos.',
     imageId: 'quadra-azul-exterior',
+    illustrationId: 'solucao-construcao-de-quadras',
     applications: [
       'Condomínios',
       'Escolas e clubes',
@@ -74,6 +76,7 @@ export const services: Service[] = [
     description:
       'Recupere a funcionalidade do espaço com uma avaliação que diferencia desgaste de acabamento de problemas na base.',
     imageId: 'quadra-ginasio',
+    illustrationId: 'solucao-reforma-de-quadras',
     applications: [
       'Quadras existentes',
       'Áreas de lazer de condomínios',
@@ -102,6 +105,7 @@ export const services: Service[] = [
     description:
       'A escolha do piso começa pelo esporte, pelo ambiente e pela rotina de uso — não apenas pela aparência.',
     imageId: 'quadra-ginasio-detalhe',
+    illustrationId: 'solucao-pisos-esportivos',
     applications: ['Quadras externas', 'Ginásios', 'Espaços multiuso'],
     scope: [
       'Análise do uso e da base',
@@ -126,6 +130,7 @@ export const services: Service[] = [
     description:
       'Uma superfície sintética precisa ser especificada em conjunto com a base, o escoamento e a finalidade do espaço.',
     imageId: 'grama-sintetica-referencia',
+    illustrationId: 'solucao-grama-sintetica',
     applications: ['Campos esportivos', 'Áreas de treino', 'Espaços de lazer'],
     scope: [
       'Entendimento da modalidade e do uso',
@@ -150,6 +155,7 @@ export const services: Service[] = [
     description:
       'Organize superfície, dimensões disponíveis e infraestrutura para um campo compatível com a proposta de uso.',
     imageId: 'campo',
+    illustrationId: 'solucao-campos-de-futebol',
     applications: ['Clubes e escolinhas', 'Condomínios', 'Espaços de locação esportiva'],
     scope: [
       'Avaliação da área disponível',
@@ -174,6 +180,7 @@ export const services: Service[] = [
     description:
       'Mais possibilidades de esporte em um mesmo espaço, com atenção à combinação de marcações e equipamentos.',
     imageId: 'quadra-azul-coberta',
+    illustrationId: 'solucao-quadras-poliesportivas',
     applications: ['Escolas', 'Condomínios', 'Clubes e áreas de lazer'],
     scope: [
       'Definição das modalidades',
@@ -198,6 +205,7 @@ export const services: Service[] = [
     description:
       'Superfície, área de jogo e condições de conservação fazem parte da mesma decisão de projeto.',
     imageId: 'tenis',
+    illustrationId: 'solucao-quadras-de-tenis',
     applications: ['Clubes', 'Condomínios', 'Propriedades particulares'],
     scope: [
       'Levantamento de uso e área',
@@ -222,6 +230,7 @@ export const services: Service[] = [
     description:
       'Um espaço de areia bem planejado começa pela avaliação da área, do escoamento e da operação.',
     imageId: 'beach-tennis-photo',
+    illustrationId: 'solucao-quadras-de-beach-tennis',
     applications: ['Arenas esportivas', 'Clubes e condomínios', 'Áreas particulares'],
     scope: [
       'Estudo da área e da circulação',
@@ -246,6 +255,7 @@ export const services: Service[] = [
     description:
       'Planejamento de superfícies para corrida, considerando finalidade, configuração da área e requisitos do projeto.',
     imageId: 'atletismo',
+    illustrationId: 'solucao-pistas-de-atletismo',
     applications: ['Espaços escolares', 'Clubes', 'Áreas de treino'],
     scope: [
       'Definição da finalidade de uso',
@@ -270,6 +280,7 @@ export const services: Service[] = [
     description:
       'Fechamentos, redes e equipamentos completam a experiência do espaço e precisam de especificação e instalação adequadas.',
     imageId: 'quadra-tecnica',
+    illustrationId: 'solucao-estruturas-e-acessorios',
     applications: ['Quadras e campos', 'Ginásios', 'Áreas de lazer'],
     scope: [
       'Levantamento dos equipamentos necessários',
@@ -294,6 +305,7 @@ export const services: Service[] = [
     description:
       'Integre brincadeira e circulação ao espaço de lazer com atenção à faixa etária, equipamentos e conservação.',
     imageId: 'playground',
+    illustrationId: 'solucao-playgrounds',
     category: 'complementar',
     applications: ['Condomínios', 'Escolas', 'Áreas de lazer'],
     scope: [
@@ -319,6 +331,7 @@ export const services: Service[] = [
     description:
       'Vegetação, caminhos e áreas de convivência como complemento ao planejamento do espaço esportivo.',
     imageId: 'paisagismo',
+    illustrationId: 'solucao-paisagismo',
     category: 'complementar',
     applications: ['Áreas de lazer', 'Condomínios', 'Entorno de espaços esportivos'],
     scope: [
