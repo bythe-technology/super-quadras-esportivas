@@ -8,6 +8,10 @@ const html = await home.text();
 assert.ok(!html.includes('noindex'));
 assert.ok(!html.includes('Sorocaba'));
 assert.ok(!html.includes('Prévia para aprovação'));
+const works = await (await fetch(`${base}/obras`)).text();
+assert.ok(works.includes('Quadra externa · piso azul'));
+assert.ok(works.includes('Quadra externa · verde e terracota'));
+assert.ok(works.includes('Quadra verde · rede e linhas brancas'));
 const robots = await (await fetch(`${base}/robots.txt`)).text();
 assert.ok(robots.includes('Allow: /'));
 assert.ok(!robots.includes('Disallow: /'));
@@ -23,6 +27,7 @@ for (const url of urls) {
   assert.equal(response.headers.get('x-robots-tag'), null, url);
 }
 assert.equal((await fetch(`${base}/obras/quadra-externa-azul`)).status, 404);
+assert.equal((await fetch(`${base}/obras/quadra-azul-multiesportiva`)).status, 404);
 await fs.writeFile(
   'qa/production-qa.json',
   JSON.stringify(
@@ -30,11 +35,13 @@ await fs.writeFile(
       date: new Date().toISOString(),
       urls,
       indexable: true,
-      unpublishedProjectsExcluded: true,
+      photoRecordsPublishedWithoutCaseStudyPages: true,
       passed: true,
     },
     null,
     2,
   ),
 );
-console.log('Production verified: 24 published URLs; indexing enabled; draft projects excluded.');
+console.log(
+  'Production verified: 24 indexable URLs; archive photo records visible, individual records excluded.',
+);

@@ -58,6 +58,27 @@ for (const photo of [
     treatment:
       'Licensed Pexels reference photograph, converted to WebP/AVIF without content edits.',
   },
+  {
+    id: 'ig-quadra-azul-multiesportiva',
+    source: 'assets/media-originals/instagram/quadra-azul-multiesportiva-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
+  {
+    id: 'ig-quadra-verde-terracota',
+    source: 'assets/media-originals/instagram/quadra-verde-terracota-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
+  {
+    id: 'ig-quadra-verde-tenis',
+    source: 'assets/media-originals/instagram/quadra-tenis-verde-instagram.jpg',
+    rights: 'approved-owner',
+    treatment:
+      'Owner-authorized public Instagram photo; light tonal correction only, no generative edits.',
+  },
 ]) {
   const source = path.resolve(root, photo.source);
   const metadata = await sharp(source).metadata();
@@ -65,6 +86,8 @@ for (const photo of [
     const pipeline = sharp(source).rotate();
     if (photo.id === 'beach-tennis-photo')
       pipeline.normalise({ lower: 1, upper: 99 }).modulate({ brightness: 1.025, saturation: 0.98 });
+    if (photo.id.startsWith('ig-'))
+      pipeline.normalise({ lower: 1, upper: 99 }).modulate({ brightness: 1.015, saturation: 0.97 });
     await pipeline[format](format === 'webp' ? { quality: 86 } : { quality: 55 }).toFile(
       path.join(publicRoot, 'media', `${photo.id}.${format}`),
     );

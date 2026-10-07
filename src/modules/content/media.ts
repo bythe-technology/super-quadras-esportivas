@@ -54,6 +54,18 @@ const ownerPhoto = (id: string, alt: string, width: number, height: number): Med
   treatment:
     'Correção tonal leve não generativa e conversão WebP/AVIF; não usada como estudo de caso identificado.',
 });
+const instagramPhoto = (id: string, filename: string, postId: string, alt: string): MediaAsset => ({
+  id,
+  src: `/media/${id}.webp`,
+  alt,
+  width: 1440,
+  height: 1440,
+  kind: 'archive-photo',
+  source: `Instagram público da empresa · https://www.instagram.com/superquadrasesportivas/p/${postId}/ · Original: assets/media-originals/instagram/${filename}`,
+  rights: 'approved-owner',
+  treatment:
+    'Correção leve de exposição e cor com Sharp; sem edição generativa ou mudanças de geometria, marcações, equipamentos ou materiais. Original preservado.',
+});
 const referencePhoto = (id: string, alt: string, width: number, height: number): MediaAsset => ({
   id,
   src: `/media/${id}.webp`,
@@ -141,6 +153,24 @@ export const media: MediaAsset[] = [
     'Quadra real de beach tennis com areia, rede, alambrado e vegetação ao redor.',
     711,
     516,
+  ),
+  instagramPhoto(
+    'ig-quadra-azul-multiesportiva',
+    'quadra-azul-multiesportiva-instagram.jpg',
+    'DZqJ85LB8aF',
+    'Quadra externa azul com marcações esportivas, gol, tabela de basquete e alambrado.',
+  ),
+  instagramPhoto(
+    'ig-quadra-verde-terracota',
+    'quadra-verde-terracota-instagram.jpg',
+    'Dad61w9BAc7',
+    'Quadra externa com áreas de piso verde e terracota e marcações esportivas variadas.',
+  ),
+  instagramPhoto(
+    'ig-quadra-verde-tenis',
+    'quadra-tenis-verde-instagram.jpg',
+    'DaFqwYah0VR',
+    'Quadra externa de piso verde com rede central, linhas brancas e fechamento em tela.',
   ),
   referencePhoto(
     'grama-sintetica-referencia',

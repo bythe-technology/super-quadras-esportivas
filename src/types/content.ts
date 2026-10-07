@@ -40,11 +40,13 @@ export interface Service {
 export interface Project {
   slug: string;
   title: string;
+  recordType: 'photo-record' | 'case-study';
   status: PublicationStatus;
   imageIds: string[];
   description: string;
   serviceSlug: string;
   documentationNote: string;
+  sourceUrl?: string;
 }
 export interface Guide {
   slug: string;

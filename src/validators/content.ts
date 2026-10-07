@@ -61,8 +61,22 @@ export function validateContent({
       errors.push('Approve at least one verified service before publication.');
     if (mediaById.get('quadra-azul-exterior')?.rights === 'pending-owner')
       errors.push('Home hero rights need owner approval.');
-    if (projects.some((p) => p.status === 'published' && p.imageIds.length < 3))
-      errors.push('Published project needs at least three verified photos.');
+    for (const project of projects.filter((item) => item.status === 'published')) {
+      if (project.recordType === 'case-study' && project.imageIds.length < 3)
+        errors.push(`Published case study needs at least three verified photos: ${project.slug}`);
+      if (project.recordType === 'photo-record') {
+        if (project.imageIds.length !== 1)
+          errors.push(`Published photo record must have exactly one photo: ${project.slug}`);
+        try {
+          if (new URL(project.sourceUrl ?? '').origin !== 'https://www.instagram.com')
+            errors.push(
+              `Published photo record must link to its Instagram source: ${project.slug}`,
+            );
+        } catch {
+          errors.push(`Published photo record must link to its Instagram source: ${project.slug}`);
+        }
+      }
+    }
     if (guides.some((g) => g.status === 'published' && !g.reviewedAt))
       errors.push('Published guide needs actual review date.');
   }

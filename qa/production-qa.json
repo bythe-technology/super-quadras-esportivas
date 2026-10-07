@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07T12:15:11.382Z",
+  "date": "2026-10-07T14:00:45.265Z",
   "urls": [
     "https://superquadrasoficial.com.br",
     "https://superquadrasoficial.com.br/empresa",
@@ -27,6 +27,6 @@
     "https://superquadrasoficial.com.br/guias/planejar-quadra-beach-tennis"
   ],
   "indexable": true,
-  "unpublishedProjectsExcluded": true,
+  "photoRecordsPublishedWithoutCaseStudyPages": true,
   "passed": true
 }

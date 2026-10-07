@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((s) => s.status === 'published')
       .map((s) => ({ url: `${company.domain}/solucoes/${s.slug}` })),
     ...projects
-      .filter((p) => p.status === 'published')
+      .filter((p) => p.status === 'published' && p.recordType === 'case-study')
       .map((p) => ({ url: `${company.domain}/obras/${p.slug}` })),
     ...guides
       .filter((g) => g.status === 'published')

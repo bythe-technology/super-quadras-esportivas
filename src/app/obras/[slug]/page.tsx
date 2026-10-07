@@ -9,7 +9,10 @@ import { pageMetadata } from '@/utils/seo';
 import styles from '@/components/content/content.module.css';
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return contentRepository.projects().map((p) => ({ slug: p.slug }));
+  return contentRepository
+    .projects()
+    .filter((project) => project.recordType === 'case-study')
+    .map((project) => ({ slug: project.slug }));
 }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const project = contentRepository.project((await params).slug);

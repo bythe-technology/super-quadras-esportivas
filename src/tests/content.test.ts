@@ -22,6 +22,18 @@ describe('content and SEO safety', () => {
         ),
       }).length,
     ).toBeGreaterThan(0));
+  it('accepts authorized Instagram photo records without turning them into case studies', () => {
+    expect(validateContent({ ...data, approved: true })).toEqual([]);
+    expect(
+      validateContent({
+        ...data,
+        approved: true,
+        projects: projects.map((project, index) =>
+          index === 0 ? { ...project, sourceUrl: 'https://example.com/photo' } : project,
+        ),
+      }).some((error) => error.includes('Instagram source')),
+    ).toBe(true);
+  });
   it('rejects duplicate slugs', () =>
     expect(validateContent({ ...data, services: [...services, services[0]] })).toContain(
       `Duplicate slug: services/${services[0].slug}`,

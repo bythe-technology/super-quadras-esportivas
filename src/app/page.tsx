@@ -144,11 +144,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="ESPAÇOS EM FOCO"
               title="O esporte ganha forma."
-              description={
-                projects.some((p) => p.status === 'review')
-                  ? 'Uma seleção de fotografias do acervo. Os detalhes de cada projeto estão sendo organizados para o novo portfólio.'
-                  : 'Conheça os projetos documentados e as soluções aplicadas.'
-              }
+              description="Uma seleção de registros visuais de diferentes superfícies e configurações. As legendas descrevem apenas o que aparece nas imagens."
               href="/obras"
               linkText="Explorar registros"
             />

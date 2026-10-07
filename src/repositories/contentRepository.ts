@@ -12,7 +12,8 @@ export const contentRepository = {
   projects: () => projects.filter(visible),
   guides: () => guides.filter(visible),
   service: (slug: string) => services.find((s) => s.slug === slug && visible(s)),
-  project: (slug: string) => projects.find((p) => p.slug === slug && visible(p)),
+  project: (slug: string) =>
+    projects.find((p) => p.slug === slug && p.recordType === 'case-study' && visible(p)),
   guide: (slug: string) => guides.find((g) => g.slug === slug && visible(g)),
   media: (id: string) => {
     const asset = media.find((m) => m.id === id);

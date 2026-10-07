@@ -1,10 +1,50 @@
 import type { Project } from '@/types/content';
 
-// Archive photographs are not verified case studies. Remain excluded from public publication.
+// Photo records describe only what is visible; case studies require verified project details.
 export const projects: Project[] = [
+  {
+    slug: 'quadra-azul-multiesportiva',
+    title: 'Quadra externa · piso azul',
+    recordType: 'photo-record',
+    status: 'published',
+    imageIds: ['ig-quadra-azul-multiesportiva'],
+    description:
+      'Registro visual de uma quadra azul ao ar livre, com marcações esportivas, gol, tabela e fechamento em tela.',
+    serviceSlug: 'quadras-poliesportivas',
+    documentationNote:
+      'Legenda baseada apenas no que aparece na foto. Cliente, local, data e escopo da execução não foram confirmados.',
+    sourceUrl: 'https://www.instagram.com/superquadrasesportivas/p/DZqJ85LB8aF/',
+  },
+  {
+    slug: 'quadra-verde-terracota',
+    title: 'Quadra externa · verde e terracota',
+    recordType: 'photo-record',
+    status: 'published',
+    imageIds: ['ig-quadra-verde-terracota'],
+    description:
+      'Registro visual de uma quadra externa com áreas de piso verde e terracota e marcações esportivas variadas.',
+    serviceSlug: 'quadras-poliesportivas',
+    documentationNote:
+      'Legenda baseada apenas no que aparece na foto. Cliente, local, data e escopo da execução não foram confirmados.',
+    sourceUrl: 'https://www.instagram.com/superquadrasesportivas/p/Dad61w9BAc7/',
+  },
+  {
+    slug: 'quadra-externa-verde-com-rede',
+    title: 'Quadra verde · rede e linhas brancas',
+    recordType: 'photo-record',
+    status: 'published',
+    imageIds: ['ig-quadra-verde-tenis'],
+    description:
+      'Registro visual de uma quadra externa de piso verde, com rede central, marcações brancas e fechamento em tela.',
+    serviceSlug: 'quadras-de-tenis',
+    documentationNote:
+      'Legenda baseada apenas no que aparece na foto. Cliente, local, data e escopo da execução não foram confirmados.',
+    sourceUrl: 'https://www.instagram.com/superquadrasesportivas/p/DaFqwYah0VR/',
+  },
   {
     slug: 'quadra-externa-azul',
     title: 'Quadra externa · superfície azul',
+    recordType: 'photo-record',
     status: 'review',
     imageIds: ['quadra-azul-exterior'],
     description:
@@ -16,6 +56,7 @@ export const projects: Project[] = [
   {
     slug: 'ginasio-multiesportivo',
     title: 'Ginásio · marcações multiesportivas',
+    recordType: 'photo-record',
     status: 'review',
     imageIds: ['quadra-ginasio', 'quadra-ginasio-detalhe'],
     description:
@@ -27,6 +68,7 @@ export const projects: Project[] = [
   {
     slug: 'quadra-azul-coberta',
     title: 'Quadra azul · cobertura de tela',
+    recordType: 'photo-record',
     status: 'review',
     imageIds: ['quadra-azul-coberta'],
     description:
