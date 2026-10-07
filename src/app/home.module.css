@@ -1,13 +1,21 @@
 .hero {
-  padding: 48px 0 72px;
+  position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #f3f7f2 0%, #ffffff 65%);
 }
 .heroGrid {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.08fr;
-  gap: 60px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 48px;
   align-items: center;
+  min-height: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.heroCopy {
+  position: relative;
+  z-index: 2;
 }
 .heroCopy h1 {
   font-size: clamp(40px, 4.45vw, 65px);
@@ -59,19 +67,45 @@
   color: var(--muted);
 }
 .heroVisual {
-  position: relative;
-  margin-right: 0;
+  position: absolute;
+  top: 0;
+  right: calc((1248px - 100vw) / 2);
+  bottom: 0;
+  width: calc(50% + (100vw - 1248px) / 2);
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+  isolation: isolate;
+}
+.heroVisual::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #102d251c 0%,
+    transparent 28%,
+    transparent 65%,
+    #102d258c 100%
+  );
+  content: '';
+  pointer-events: none;
+}
+.heroVisual figure,
+.heroVisual figure > div {
+  height: 100%;
 }
 .heroVisual figure > div {
-  aspect-ratio: 1.05;
-  border-radius: 20px;
-  box-shadow: 0 20px 48px #102d2515;
-  z-index: 1;
+  aspect-ratio: auto;
+  border-radius: 0;
+  background: #102d25;
 }
 .heroVisual img {
   object-position: 52% center;
 }
 .heroLabel {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,33 +113,28 @@
   font-size: 8px;
   letter-spacing: 1.6px;
   font-weight: 600;
-  margin-bottom: 16px;
-  color: var(--green);
+  color: white;
+  background: #102d258c;
+  border: 1px solid #ffffff36;
+  border-radius: 30px;
+  padding: 10px 14px;
+  backdrop-filter: blur(8px);
 }
 .photoCaption {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  right: 7%;
+  bottom: 26px;
   display: flex;
   justify-content: space-between;
   font-size: 9px;
-  margin-top: 14px;
   gap: 10px;
-  color: var(--muted);
+  color: #f3f7f2;
 }
 .photoCaption span:last-child {
-  color: var(--green);
+  color: white;
   font-weight: 600;
-}
-.heroAccent {
-  position: absolute;
-  width: 80%;
-  height: 65%;
-  background: #dcebdc;
-  border-radius: 24px;
-  right: -40px;
-  bottom: 50px;
-  transform: skewY(-8deg);
-  z-index: 0;
 }
 .offerStrip {
   background: #f5f7f6;
@@ -307,6 +336,13 @@
 }
 @media (max-width: 1100px) {
   .heroGrid {
+    min-height: 560px;
+  }
+  .heroVisual {
+    right: 0;
+    width: 50%;
+  }
+  .heroGrid {
     gap: 34px;
   }
   .heroActions {
@@ -323,13 +359,66 @@
     gap: 40px;
   }
 }
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    min-height: 0;
+    padding-top: 44px;
+    padding-bottom: 0;
+  }
+  .heroCopy {
+    padding-bottom: 32px;
+  }
+  .heroVisual {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: calc(100% + 48px);
+    height: clamp(340px, 60vw, 520px);
+    margin: 0 -24px;
+    clip-path: none;
+  }
+  .heroLabel {
+    left: 20px;
+  }
+  .photoCaption {
+    left: 20px;
+  }
+}
 @media (max-width: 720px) {
   .hero {
-    padding: 42px 0;
+    padding: 0;
   }
   .heroGrid {
     grid-template-columns: 1fr;
-    gap: 38px;
+    gap: 0;
+    min-height: 0;
+    padding-top: 36px;
+    padding-bottom: 0;
+  }
+  .heroCopy {
+    padding-bottom: 30px;
+  }
+  .heroVisual {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: calc(100% + 48px);
+    height: clamp(260px, 78vw, 380px);
+    margin: 0 -24px;
+    clip-path: none;
+  }
+  .heroLabel {
+    top: 18px;
+    left: 20px;
+  }
+  .photoCaption {
+    left: 20px;
+    right: 20px;
+    bottom: 18px;
   }
   .heroCopy h1 {
     font-size: 45px;
@@ -347,9 +436,6 @@
   }
   .heroVisual figure > div {
     aspect-ratio: 4/3;
-  }
-  .heroAccent {
-    right: -20px;
   }
   .offerInner {
     display: grid;

@@ -82,9 +82,8 @@ export default function HomePage() {
             />
             <div className={styles.photoCaption}>
               <span>Registro fotográfico do acervo</span>
-              <span>Esporte encontra espaço.</span>
+              <span>Quadra ao ar livre</span>
             </div>
-            <div className={styles.heroAccent} aria-hidden="true" />
           </div>
         </div>
       </section>
