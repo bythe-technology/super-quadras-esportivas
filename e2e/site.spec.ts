@@ -11,7 +11,7 @@ test('home is accessible, responsive and has one H1', async ({ page }) => {
   expect(results.violations).toEqual([]);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
-    'https://superquadrasoficial.com.br',
+    'https://www.superquadrasoficial.com.br',
   );
 });
 test('quote validates, preserves accents, preselects and prepares official WhatsApp', async ({

@@ -27,12 +27,6 @@ const config: NextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.superquadrasoficial.com.br' }],
-        destination: 'https://superquadrasoficial.com.br/:path*',
-        permanent: true,
-      },
       { source: '/piso', destination: '/solucoes/pisos-esportivos', permanent: true },
       { source: '/tipos-de-pisos', destination: '/solucoes/pisos-esportivos', permanent: true },
       { source: '/grama-sintetica', destination: '/solucoes/grama-sintetica', permanent: true },

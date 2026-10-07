@@ -40,6 +40,10 @@ assert.ok(robots.includes('Allow: /'));
 assert.ok(!robots.includes('Disallow: /'));
 const sitemap = await (await fetch(`${base}/sitemap.xml`)).text();
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
+assert.ok(
+  urls.every((url) => url.startsWith('https://www.superquadrasoficial.com.br')),
+  'sitemap URLs must use the configured www canonical domain',
+);
 assert.equal(urls.length, 24);
 assert.equal(urls.filter((url) => url.includes('/solucoes/')).length, 12);
 assert.equal(urls.filter((url) => url.includes('/guias/')).length, 3);
