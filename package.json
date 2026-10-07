@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "assets": "node scripts/prepare-assets.mjs && node scripts/prepare-solution-illustrations.mjs && tsx scripts/prepare-social.ts",
+    "assets": "node scripts/prepare-assets.mjs && node scripts/prepare-solution-illustrations.mjs && node scripts/prepare-guide-illustrations.mjs && tsx scripts/prepare-social.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "format": "prettier --write src scripts e2e docs *.ts *.json README.md",
     "format:check": "prettier --check src scripts e2e docs *.ts *.json README.md",

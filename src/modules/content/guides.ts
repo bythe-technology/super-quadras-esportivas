@@ -87,7 +87,7 @@ A decisão entre reformar e reconstruir depende de avaliação técnica, necessi
       'Área, drenagem, areia e circulação: organize as principais perguntas para começar o projeto.',
     status: 'published',
     reviewedAt: '2026-10-07',
-    imageId: 'beach-tennis-photo',
+    imageId: 'guia-beach-tennis',
     serviceSlug: 'quadras-de-beach-tennis',
     readingMinutes: 4,
     markdown: `## Defina a proposta de uso

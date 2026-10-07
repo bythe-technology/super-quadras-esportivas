@@ -131,6 +131,11 @@ export const media: MediaAsset[] = [
     'beach-tennis',
     'Ilustração conceitual em 3D de quadra de beach tennis com areia e rede.',
   ),
+  generated(
+    'guia-beach-tennis',
+    'Ilustração conceitual em 3D de quadra de beach tennis em maquete isométrica, com areia clara, linhas azuis e rede central.',
+    'docs/ILUSTRACOES.md',
+  ),
   ownerPhoto(
     'beach-tennis-photo',
     'Quadra real de beach tennis com areia, rede, alambrado e vegetação ao redor.',

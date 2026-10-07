@@ -110,6 +110,17 @@
     "treatment": "Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo."
   },
   {
+    "id": "guia-beach-tennis",
+    "src": "/illustrations/guia-beach-tennis-premium.webp",
+    "alt": "Ilustração conceitual em 3D de quadra de beach tennis em maquete isométrica, com areia clara, linhas azuis e rede central.",
+    "width": 1448,
+    "height": 1086,
+    "kind": "conceptual-illustration",
+    "source": "Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md",
+    "rights": "original-illustration",
+    "treatment": "Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo."
+  },
+  {
     "id": "beach-tennis-photo",
     "src": "/media/beach-tennis-photo.webp",
     "alt": "Quadra real de beach tennis com areia, rede, alambrado e vegetação ao redor.",
