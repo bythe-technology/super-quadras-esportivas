@@ -1,0 +1,178 @@
+[
+  {
+    "id": "quadra-azul-exterior",
+    "src": "/media/quadra-azul-exterior.webp",
+    "alt": "Quadra azul ao ar livre, com alambrado, marcações e tabelas de basquete.",
+    "width": 1040,
+    "height": 780,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/construcao-de-quadra-poliesportiva-4.jpeg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "quadra-azul-coberta",
+    "src": "/media/quadra-azul-coberta.webp",
+    "alt": "Quadra azul com cobertura de tela, marcações brancas e alambrado.",
+    "width": 1080,
+    "height": 607,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/Quadra-Esportiva-1.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "quadra-ginasio",
+    "src": "/media/quadra-ginasio.webp",
+    "alt": "Piso de ginásio com área central laranja e marcações para diferentes modalidades.",
+    "width": 1080,
+    "height": 1080,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/Quadra-Esportiva-12.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "quadra-ginasio-detalhe",
+    "src": "/media/quadra-ginasio-detalhe.webp",
+    "alt": "Vista lateral do piso de ginásio, com marcações esportivas e área cinza.",
+    "width": 1080,
+    "height": 1080,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/Quadra-Esportiva-10.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "construcao-quadra",
+    "src": "/media/construcao-quadra.webp",
+    "alt": "Registro fotográfico de quadra preservado do site anterior.",
+    "width": 1080,
+    "height": 607,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/construcao-de-quadras-1.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "piso-asfaltico",
+    "src": "/media/piso-asfaltico.webp",
+    "alt": "Imagem de superfície esportiva apresentada no acervo como piso asfáltico.",
+    "width": 350,
+    "height": 263,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/piso-asfaltico-para-quadras-poliesportivas.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "piso-concreto",
+    "src": "/media/piso-concreto.webp",
+    "alt": "Imagem de superfície esportiva apresentada no acervo como piso de concreto.",
+    "width": 350,
+    "height": 263,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/piso-de-concreto-para-quadras-poliesportivas.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "saibro",
+    "src": "/media/saibro.webp",
+    "alt": "Imagem de superfície apresentada no acervo como saibro sintético.",
+    "width": 350,
+    "height": 263,
+    "kind": "archive-photo",
+    "source": "../assets/biblioteca/imagens/saibro-sintetico-para-quadras-poliesportivas.jpg",
+    "rights": "approved-owner",
+    "treatment": "Conversão de formato e remoção de metadados; sem alteração da obra."
+  },
+  {
+    "id": "quadra-tecnica",
+    "src": "/illustrations/quadra-tecnica-premium.webp",
+    "alt": "Ilustração conceitual em 3D de quadra azul com alambrado e gols.",
+    "width": 1448,
+    "height": 1086,
+    "kind": "conceptual-illustration",
+    "source": "Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md",
+    "rights": "original-illustration",
+    "treatment": "Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo."
+  },
+  {
+    "id": "beach-tennis",
+    "src": "/illustrations/beach-tennis-premium.webp",
+    "alt": "Ilustração conceitual em 3D de quadra de beach tennis com areia e rede.",
+    "width": 1448,
+    "height": 1086,
+    "kind": "conceptual-illustration",
+    "source": "Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md",
+    "rights": "original-illustration",
+    "treatment": "Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo."
+  },
+  {
+    "id": "campo",
+    "src": "/illustrations/campo.svg",
+    "alt": "Ilustração conceitual de campo com superfície verde.",
+    "width": 1200,
+    "height": 900,
+    "kind": "conceptual-illustration",
+    "source": "Ilustração vetorial original para o novo site",
+    "rights": "original-illustration",
+    "treatment": "Composição conceitual, sem medidas ou especificação executiva."
+  },
+  {
+    "id": "tenis",
+    "src": "/illustrations/tenis.svg",
+    "alt": "Ilustração conceitual de quadra de tênis com rede.",
+    "width": 1200,
+    "height": 900,
+    "kind": "conceptual-illustration",
+    "source": "Ilustração vetorial original para o novo site",
+    "rights": "original-illustration",
+    "treatment": "Composição conceitual, sem medidas ou especificação executiva."
+  },
+  {
+    "id": "atletismo",
+    "src": "/illustrations/atletismo.svg",
+    "alt": "Ilustração conceitual de uma pista de atletismo.",
+    "width": 1200,
+    "height": 900,
+    "kind": "conceptual-illustration",
+    "source": "Ilustração vetorial original para o novo site",
+    "rights": "original-illustration",
+    "treatment": "Composição conceitual, sem medidas ou especificação executiva."
+  },
+  {
+    "id": "playground",
+    "src": "/illustrations/playground.svg",
+    "alt": "Ilustração conceitual de espaço de lazer com playground.",
+    "width": 1200,
+    "height": 900,
+    "kind": "conceptual-illustration",
+    "source": "Ilustração vetorial original para o novo site",
+    "rights": "original-illustration",
+    "treatment": "Composição conceitual, sem medidas ou especificação executiva."
+  },
+  {
+    "id": "paisagismo",
+    "src": "/illustrations/paisagismo.svg",
+    "alt": "Ilustração conceitual de vegetação e caminhos em uma área de lazer.",
+    "width": 1200,
+    "height": 900,
+    "kind": "conceptual-illustration",
+    "source": "Ilustração vetorial original para o novo site",
+    "rights": "original-illustration",
+    "treatment": "Composição conceitual, sem medidas ou especificação executiva."
+  },
+  {
+    "id": "base-drenagem",
+    "src": "/illustrations/base-drenagem-premium.webp",
+    "alt": "Ilustração conceitual das camadas de uma superfície esportiva, sem especificação executiva.",
+    "width": 1448,
+    "height": 1086,
+    "kind": "conceptual-illustration",
+    "source": "Gerador integrado OpenAI · 2026-10-07 · prompts em docs/ILUSTRACOES.md",
+    "rights": "original-illustration",
+    "treatment": "Render editorial conceitual gerado por IA; conversão WebP/AVIF; não é obra real nem projeto executivo."
+  }
+]

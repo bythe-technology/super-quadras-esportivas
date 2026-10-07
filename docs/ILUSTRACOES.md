@@ -1,0 +1,17 @@
+# Ilustrações editoriais — 2026-10-07
+
+Geradas pelo gerador integrado OpenAI. Uso exclusivamente conceitual, sem função de projeto executivo. Originais em assets/editorial-originals; derivados WebP e AVIF em public/illustrations. SVGs anteriores preservados. As imagens não documentam obras reais.
+
+## Prompts finais
+
+### base-drenagem
+
+Use case: stylized-concept. Asset type: editorial cover for premium Brazilian sports construction website. Landscape 4:3. Premium architectural miniature, polished physically based 3D render with realistic material texture, not a real project photo. Soft ivory studio background, restrained forest green #006B3C and navy blue #06458A, warm natural materials. Three-quarter elevated viewpoint, whole subject visible with generous margins, soft daylight from upper left, detailed contact shadows, sophisticated architectural magazine aesthetic. No words, no logos, no watermark, no people. Not a technical construction specification. Subject: an exploded architectural material model of a sports court surface. Three broad aligned rectangular layers gently separated vertically: finely textured blue sports finish with clean simple white boundary, gray structural substrate, tan aggregate base with visible stones. Green outer edging. Restrained credible physical textures; no arrows, no labels, no pipes, no complicated court markings.
+
+### quadra-tecnica
+
+Use case: stylized-concept. Asset type: editorial cover for premium Brazilian sports construction website. Landscape 4:3. Premium architectural miniature, polished physically based 3D render with realistic material texture, not a real project photo. Soft ivory studio background, restrained forest green #006B3C and navy blue #06458A, warm natural materials. Three-quarter elevated viewpoint, whole subject visible with generous margins, soft daylight from upper left, detailed contact shadows, sophisticated architectural magazine aesthetic. No words, no logos, no watermark, no people. Not a technical construction specification. Subject: a beautifully crafted miniature blue and green multi-sport court on a low rectangular plinth. Crisp simple white court boundary and center line with center circle, two small soccer goals at opposite short ends, slim dark green protective mesh fencing around perimeter. Coherent geometry and detailed mesh; no overlaid sports markings, no basketball equipment.
+
+### beach-tennis
+
+Use case: stylized-concept. Asset type: editorial cover for premium Brazilian sports construction website. Landscape 4:3. Premium architectural miniature, polished physically based 3D render with realistic material texture, not a real project photo. Soft ivory studio background, restrained forest green #006B3C and navy blue #06458A, warm natural materials. Three-quarter elevated viewpoint, whole subject visible with generous margins, soft daylight from upper left, detailed contact shadows, sophisticated architectural magazine aesthetic. No words, no logos, no watermark, no people. Not a technical construction specification. Subject: premium architectural miniature of a beach tennis court. Fine warm ivory sand contained in a rectangular low plinth, precise thin blue rectangular court boundary, one taut dark mesh net dividing the middle, two slim navy net posts, very subtle sand texture. Elegant minimal composition with small tuft of planting outside court, no giant sun disk, no ball or rackets.

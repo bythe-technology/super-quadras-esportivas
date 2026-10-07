@@ -1,0 +1,230 @@
+.floating {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--green);
+  color: white;
+  border: 1px solid #ffffff4d;
+  padding: 14px 18px;
+  border-radius: 50px;
+  box-shadow: 0 5px 20px #00251426;
+  font-size: 11px;
+  font-weight: 600;
+  min-height: 48px;
+}
+.floating:hover {
+  background: #00522f;
+}
+.form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 35px;
+}
+.form legend {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 26px;
+  letter-spacing: -0.5px;
+}
+.form legend span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green);
+  margin-right: 12px;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.full {
+  grid-column: 1/-1;
+}
+.form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.form input,
+.form select,
+.form textarea {
+  border: 1px solid #cdd8d0;
+  padding: 13px 14px;
+  width: 100%;
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  font-size: 13px;
+  min-height: 47px;
+}
+.form textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #69786d;
+  font-size: 12px;
+}
+.form [aria-invalid='true'] {
+  border-color: #ac392c;
+}
+.error {
+  display: block;
+  color: #9c2c20;
+  font-size: 11px;
+  margin-top: 7px;
+}
+.counter {
+  display: block;
+  text-align: right;
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: 5px;
+}
+.formNote {
+  font-size: 11px !important;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: var(--green);
+  border: 1px solid var(--green);
+  color: white;
+  padding: 16px 22px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  min-height: 50px;
+}
+.primaryButton:hover {
+  background: #00522f;
+}
+.copyButton {
+  background: transparent;
+  border: 1px solid #c4cec8;
+  border-radius: 4px;
+  color: var(--ink);
+  padding: 15px 20px;
+  font-size: 12px;
+  min-height: 48px;
+}
+.preview {
+  margin-top: 35px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.preview h2 {
+  font-size: 23px;
+}
+.preview pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.8;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 20px;
+  user-select: text;
+}
+.preview p:not(:first-child) {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.previewActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.contactCard {
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+.contactCard h2 {
+  font-size: 20px;
+}
+.contactCard p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.contactCard a {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green);
+  min-height: 44px;
+}
+.contactCard a:hover {
+  text-decoration: underline;
+}
+.quoteAside {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 30px;
+}
+.quoteAside h2 {
+  font-size: 24px;
+}
+.quoteAside p,
+.quoteAside li {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.quoteAside ul {
+  padding-left: 18px;
+}
+.quoteAside a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 26px;
+  min-height: 44px;
+}
+@media (max-width: 720px) {
+  .floating {
+    right: 16px;
+    bottom: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    min-width: 48px;
+    justify-content: center;
+  }
+  .floating span:not(:last-child) {
+    display: none;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .preview {
+    padding: 20px;
+  }
+  .previewActions > a,
+  .previewActions > button {
+    width: 100%;
+  }
+}

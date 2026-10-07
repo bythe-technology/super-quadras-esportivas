@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-07T12:13:35.905Z",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "h1": 1,
+      "title": "Construção e reforma de quadras esportivas",
+      "description": "Soluções para quadras, pisos esportivos e espaços de lazer. De São Paulo para todo o Brasil. Converse com a Super Quadras sobre seu projeto.",
+      "canonical": "https://superquadrasoficial.com.br"
+    },
+    {
+      "path": "/solucoes",
+      "status": 200,
+      "h1": 1,
+      "title": "Soluções para espaços esportivos | Super Quadras",
+      "description": "Construção, reforma, pisos, quadras por modalidade e soluções complementares de lazer. Conheça o escopo e converse sobre seu espaço.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes"
+    },
+    {
+      "path": "/obras",
+      "status": 200,
+      "h1": 1,
+      "title": "Obras e registros | Super Quadras",
+      "description": "Conheça os registros fotográficos de espaços esportivos e acompanhe a organização do portfólio da Super Quadras.",
+      "canonical": "https://superquadrasoficial.com.br/obras"
+    },
+    {
+      "path": "/empresa",
+      "status": 200,
+      "h1": 1,
+      "title": "Conheça a Super Quadras Esportivas | Super Quadras",
+      "description": "Uma abordagem que considera uso, base, superfície e conservação na mesma conversa. Conheça a proposta da Super Quadras para espaços esportivos.",
+      "canonical": "https://superquadrasoficial.com.br/empresa"
+    },
+    {
+      "path": "/guias",
+      "status": 200,
+      "h1": 1,
+      "title": "Guias para planejar seu espaço esportivo | Super Quadras",
+      "description": "Informações sobre pisos, construção, reforma e beach tennis para organizar ideias e preparar seu projeto esportivo.",
+      "canonical": "https://superquadrasoficial.com.br/guias"
+    },
+    {
+      "path": "/contato",
+      "status": 200,
+      "h1": 1,
+      "title": "Contato e orçamento | Super Quadras",
+      "description": "Fale com a Super Quadras pelo WhatsApp +55 15 99715-7642. Conte sobre seu espaço esportivo e consulte as possibilidades de atendimento.",
+      "canonical": "https://superquadrasoficial.com.br/contato"
+    },
+    {
+      "path": "/orcamento",
+      "status": 200,
+      "h1": 1,
+      "title": "Solicitar orçamento para seu espaço esportivo | Super Quadras",
+      "description": "Organize seu pedido de construção, reforma ou manutenção e confira a mensagem antes de enviá-la pelo WhatsApp.",
+      "canonical": "https://superquadrasoficial.com.br/orcamento"
+    },
+    {
+      "path": "/solucoes/construcao-de-quadras",
+      "status": 200,
+      "h1": 1,
+      "title": "Construção de quadras esportivas | Super Quadras",
+      "description": "Do espaço disponível à definição de uma quadra adequada ao uso: planejamento, base, superfície e estrutura precisam trabalhar juntos.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/construcao-de-quadras"
+    },
+    {
+      "path": "/solucoes/reforma-de-quadras",
+      "status": 200,
+      "h1": 1,
+      "title": "Reforma de quadras esportivas | Super Quadras",
+      "description": "Recupere a funcionalidade do espaço com uma avaliação que diferencia desgaste de acabamento de problemas na base.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/reforma-de-quadras"
+    },
+    {
+      "path": "/solucoes/pisos-esportivos",
+      "status": 200,
+      "h1": 1,
+      "title": "Pisos esportivos | Super Quadras",
+      "description": "A escolha do piso começa pelo esporte, pelo ambiente e pela rotina de uso — não apenas pela aparência.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/pisos-esportivos"
+    },
+    {
+      "path": "/solucoes/grama-sintetica",
+      "status": 200,
+      "h1": 1,
+      "title": "Grama sintética para espaços esportivos | Super Quadras",
+      "description": "Uma superfície sintética precisa ser especificada em conjunto com a base, o escoamento e a finalidade do espaço.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/grama-sintetica"
+    },
+    {
+      "path": "/solucoes/quadras-poliesportivas",
+      "status": 200,
+      "h1": 1,
+      "title": "Quadras poliesportivas | Super Quadras",
+      "description": "Mais possibilidades de esporte em um mesmo espaço, com atenção à combinação de marcações e equipamentos.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/quadras-poliesportivas"
+    },
+    {
+      "path": "/solucoes/quadras-de-beach-tennis",
+      "status": 200,
+      "h1": 1,
+      "title": "Construção de quadras de beach tennis | Super Quadras",
+      "description": "Um espaço de areia bem planejado começa pela avaliação da área, do escoamento e da operação.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/quadras-de-beach-tennis"
+    },
+    {
+      "path": "/obras/quadra-externa-azul",
+      "status": 200,
+      "h1": 1,
+      "title": "Quadra externa · superfície azul | Super Quadras",
+      "description": "Registro do acervo anterior: quadra ao ar livre com alambrado e marcações para uso esportivo.",
+      "canonical": "https://superquadrasoficial.com.br/obras/quadra-externa-azul"
+    },
+    {
+      "path": "/obras/ginasio-multiesportivo",
+      "status": 200,
+      "h1": 1,
+      "title": "Ginásio · marcações multiesportivas | Super Quadras",
+      "description": "Registros do acervo anterior mostram superfície cinza e laranja em ambiente coberto. Não há documentação suficiente para identificar o cliente ou a intervenção.",
+      "canonical": "https://superquadrasoficial.com.br/obras/ginasio-multiesportivo"
+    },
+    {
+      "path": "/obras/quadra-azul-coberta",
+      "status": 200,
+      "h1": 1,
+      "title": "Quadra azul · cobertura de tela | Super Quadras",
+      "description": "Fotografia preservada do site anterior com piso azul, fechamento em alambrado e cobertura de tela.",
+      "canonical": "https://superquadrasoficial.com.br/obras/quadra-azul-coberta"
+    },
+    {
+      "path": "/atendimento",
+      "status": 200,
+      "h1": 1,
+      "title": "De São Paulo para todo o Brasil | Super Quadras",
+      "description": "Construção e reforma de espaços esportivos em São Paulo e outras regiões do Brasil. Consulte o atendimento conforme o escopo e a logística do projeto.",
+      "canonical": "https://superquadrasoficial.com.br/atendimento"
+    },
+    {
+      "path": "/guias/como-escolher-piso-quadra-esportiva",
+      "status": 200,
+      "h1": 1,
+      "title": "Como escolher o piso de uma quadra esportiva | Super Quadras",
+      "description": "Modalidade, base, ambiente e manutenção: quatro decisões que ajudam a comparar superfícies sem escolher apenas pela aparência.",
+      "canonical": "https://superquadrasoficial.com.br/guias/como-escolher-piso-quadra-esportiva"
+    },
+    {
+      "path": "/guias/construir-ou-reformar-quadra",
+      "status": 200,
+      "h1": 1,
+      "title": "Construir ou reformar: o que avaliar? | Super Quadras",
+      "description": "Entenda o que observar no espaço existente e quais informações reunir antes de definir a intervenção.",
+      "canonical": "https://superquadrasoficial.com.br/guias/construir-ou-reformar-quadra"
+    },
+    {
+      "path": "/guias/planejar-quadra-beach-tennis",
+      "status": 200,
+      "h1": 1,
+      "title": "Antes de construir uma quadra de beach tennis | Super Quadras",
+      "description": "Área, drenagem, areia e circulação: organize as principais perguntas para começar o projeto.",
+      "canonical": "https://superquadrasoficial.com.br/guias/planejar-quadra-beach-tennis"
+    },
+    {
+      "path": "/politica-de-privacidade",
+      "status": 200,
+      "h1": 1,
+      "title": "Política de privacidade | Super Quadras",
+      "description": "Entenda como funcionam o formulário local, o contato pelo WhatsApp e as análises opcionais de navegação no site da Super Quadras.",
+      "canonical": "https://superquadrasoficial.com.br/politica-de-privacidade"
+    },
+    {
+      "path": "/solucoes/campos-de-futebol",
+      "status": 200,
+      "h1": 1,
+      "title": "Construção e reforma de campos de futebol | Super Quadras",
+      "description": "Organize superfície, dimensões disponíveis e infraestrutura para um campo compatível com a proposta de uso.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/campos-de-futebol"
+    },
+    {
+      "path": "/solucoes/quadras-de-tenis",
+      "status": 200,
+      "h1": 1,
+      "title": "Quadras de tênis | Super Quadras",
+      "description": "Superfície, área de jogo e condições de conservação fazem parte da mesma decisão de projeto.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/quadras-de-tenis"
+    },
+    {
+      "path": "/solucoes/pistas-de-atletismo",
+      "status": 200,
+      "h1": 1,
+      "title": "Pistas de atletismo | Super Quadras",
+      "description": "Planejamento de superfícies para corrida, considerando finalidade, configuração da área e requisitos do projeto.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/pistas-de-atletismo"
+    },
+    {
+      "path": "/solucoes/estruturas-e-acessorios",
+      "status": 200,
+      "h1": 1,
+      "title": "Estruturas e acessórios esportivos | Super Quadras",
+      "description": "Fechamentos, redes e equipamentos completam a experiência do espaço e precisam de especificação e instalação adequadas.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/estruturas-e-acessorios"
+    },
+    {
+      "path": "/solucoes/playgrounds",
+      "status": 200,
+      "h1": 1,
+      "title": "Playgrounds para áreas de lazer | Super Quadras",
+      "description": "Integre brincadeira e circulação ao espaço de lazer com atenção à faixa etária, equipamentos e conservação.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/playgrounds"
+    },
+    {
+      "path": "/solucoes/paisagismo",
+      "status": 200,
+      "h1": 1,
+      "title": "Paisagismo para espaços de lazer | Super Quadras",
+      "description": "Vegetação, caminhos e áreas de convivência como complemento ao planejamento do espaço esportivo.",
+      "canonical": "https://superquadrasoficial.com.br/solucoes/paisagismo"
+    }
+  ],
+  "responsiveWidths": [
+    360,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "reflow200Percent": true,
+  "errors": []
+}

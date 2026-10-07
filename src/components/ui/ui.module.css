@@ -1,0 +1,29 @@
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: var(--green);
+  color: white;
+  border: 1px solid var(--green);
+  padding: 16px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  min-height: 52px;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+.action:hover {
+  background: #00522f;
+  box-shadow: 0 6px 18px #006b3c20;
+}
+.secondary {
+  background: transparent;
+  color: var(--ink);
+  border-color: #c4cec8;
+}
+.secondary:hover {
+  background: var(--surface);
+}

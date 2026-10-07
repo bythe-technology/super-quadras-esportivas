@@ -1,0 +1,334 @@
+.hero {
+  padding: 48px 0 72px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f3f7f2 0%, #ffffff 65%);
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 60px;
+  align-items: center;
+}
+.heroCopy h1 {
+  font-size: clamp(40px, 4.45vw, 65px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  max-width: 590px;
+  margin: 25px 0;
+}
+.heroCopy h1 span {
+  color: var(--green);
+}
+.heroDescription {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 400px;
+}
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin: 30px 0;
+}
+.heroLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.heroLink:hover {
+  color: var(--green);
+}
+.heroLocation {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 36px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.heroLocation svg {
+  color: var(--green);
+  margin-top: 3px;
+}
+.heroLocation small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.heroVisual {
+  position: relative;
+  margin-right: 0;
+}
+.heroVisual figure > div {
+  aspect-ratio: 1.05;
+  border-radius: 20px;
+  box-shadow: 0 20px 48px #102d2515;
+  z-index: 1;
+}
+.heroVisual img {
+  object-position: 52% center;
+}
+.heroLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  font-size: 8px;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--green);
+}
+.photoCaption {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  margin-top: 14px;
+  gap: 10px;
+  color: var(--muted);
+}
+.photoCaption span:last-child {
+  color: var(--green);
+  font-weight: 600;
+}
+.heroAccent {
+  position: absolute;
+  width: 80%;
+  height: 65%;
+  background: #dcebdc;
+  border-radius: 24px;
+  right: -40px;
+  bottom: 50px;
+  transform: skewY(-8deg);
+  z-index: 0;
+}
+.offerStrip {
+  background: #f5f7f6;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.offerInner {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 83px;
+  align-items: center;
+}
+.offerInner span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.offerInner svg {
+  color: var(--green);
+}
+.processSection {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.approachGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+.approachVisual {
+  position: relative;
+  padding-right: 25px;
+}
+.verticalLabel {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  writing-mode: vertical-rl;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--green);
+}
+.approachCopy h2 {
+  font-size: clamp(30px, 3.5vw, 45px);
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+  margin: 20px 0;
+}
+.approachCopy > p:not(:first-child) {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.approachCopy ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 30px;
+}
+.approachCopy li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 9px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.approachCopy li svg {
+  color: var(--green);
+  flex-shrink: 0;
+}
+.region {
+  background: #102d25;
+  color: white;
+  overflow: hidden;
+  padding: 55px 0;
+}
+.regionInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.3fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+.region .eyebrow {
+  color: #a3d5b4;
+}
+.region h2 {
+  font-size: 36px;
+  letter-spacing: -1.3px;
+  line-height: 1.22;
+  margin: 20px 0 0;
+}
+.region p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #c4d7cd;
+}
+.region a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b5debd;
+  margin-top: 24px;
+}
+.region a:hover {
+  text-decoration: underline;
+}
+.regionMark {
+  font-size: 100px;
+  letter-spacing: -8px;
+  font-weight: 700;
+  color: #ffffff12;
+  transform: rotate(-8deg);
+}
+.faqGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 90px;
+}
+.faqGrid h2 {
+  font-size: 36px;
+}
+.faqGrid .sectionHeading {
+  align-self: start;
+}
+.regionMark {
+  color: #80a68f;
+}
+@media (max-width: 1100px) {
+  .heroGrid {
+    gap: 34px;
+  }
+  .heroActions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .heroCopy h1 {
+    font-size: 52px;
+  }
+  .approachGrid {
+    gap: 50px;
+  }
+  .faqGrid {
+    gap: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .hero {
+    padding: 42px 0;
+  }
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .heroCopy h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
+    max-width: 500px;
+  }
+  .heroDescription {
+    font-size: 14px;
+  }
+  .heroActions {
+    margin: 24px 0;
+  }
+  .heroLocation {
+    margin-top: 24px;
+  }
+  .heroVisual figure > div {
+    aspect-ratio: 4/3;
+  }
+  .heroAccent {
+    right: -20px;
+  }
+  .offerInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .offerInner span {
+    font-size: 10px;
+    gap: 8px;
+  }
+  .offerInner svg {
+    width: 17px;
+  }
+  .approachGrid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .approachVisual {
+    padding-right: 18px;
+  }
+  .regionInner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .regionMark {
+    position: absolute;
+    right: 24px;
+    top: 0;
+    font-size: 85px;
+  }
+  .region h2 {
+    font-size: 32px;
+  }
+  .faqGrid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .heroLabel {
+    font-size: 7px;
+  }
+  .photoCaption {
+    font-size: 8px;
+  }
+}
